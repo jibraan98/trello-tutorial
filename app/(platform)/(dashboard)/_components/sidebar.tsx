@@ -16,6 +16,7 @@ interface SidebarProps {
   storageKey?: string;
 }
 
+
 export const Sidebar = ({ storageKey = "t-sidebar-state" }: SidebarProps) => {
   const [expanded, setExpanded] = useLocalStorage<Record<string, any>>(
     storageKey,
@@ -61,6 +62,9 @@ export const Sidebar = ({ storageKey = "t-sidebar-state" }: SidebarProps) => {
       </div>
       </>
     );
+  }
+  const handleClick = () => {
+    
   }
   return (
     <>

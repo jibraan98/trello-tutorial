@@ -5,6 +5,9 @@ import Board from "./board"
 
 const OrginzationIdPage = async () => {
   const boards = await db.board.findMany()
+  const handleClick = () => {
+    console.log("hello")
+  }
   return (
     <div>
         <Form />
